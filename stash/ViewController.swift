@@ -9,9 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var achievementsBusiness = AchievementsBusiness()
     override func viewDidLoad() {
         super.viewDidLoad()
+        achievementsBusiness.achievements(parameters: [:]) { (achievements, error) in
+            print(achievements?.achievements)
+        }
         // Do any additional setup after loading the view.
     }
 

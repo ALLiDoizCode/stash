@@ -15,10 +15,19 @@
 		4D12256D243E629800D2C620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D12256B243E629800D2C620 /* LaunchScreen.storyboard */; };
 		4D122578243E629800D2C620 /* stashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D122577243E629800D2C620 /* stashTests.swift */; };
 		4D122583243E629800D2C620 /* stashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D122582243E629800D2C620 /* stashUITests.swift */; };
-		4D1233B424400CDC00AF5DCE /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233B324400CDC00AF5DCE /* Environment.swift */; };
-		4D1233B62440563B00AF5DCE /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233B52440563B00AF5DCE /* APIHandler.swift */; };
-		4D1233B8244058B700AF5DCE /* AchievementsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233B7244058B700AF5DCE /* AchievementsAPI.swift */; };
-		4D1233BA2440590700AF5DCE /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233B92440590700AF5DCE /* BaseRequest.swift */; };
+		4D1233C72441005F00AF5DCE /* AchievementsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233C42441005F00AF5DCE /* AchievementsAPI.swift */; };
+		4D1233C82441005F00AF5DCE /* AchievementServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233C52441005F00AF5DCE /* AchievementServices.swift */; };
+		4D1233C92441005F00AF5DCE /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233C62441005F00AF5DCE /* ServiceConstants.swift */; };
+		4D1233CE2441008000AF5DCE /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233CC2441008000AF5DCE /* MockURLProtocol.swift */; };
+		4D1233CF2441008000AF5DCE /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233CD2441008000AF5DCE /* MockService.swift */; };
+		4D1233D22441008A00AF5DCE /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233D02441008A00AF5DCE /* APIHandler.swift */; };
+		4D1233D32441008A00AF5DCE /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233D12441008A00AF5DCE /* APILoader.swift */; };
+		4D1233D62441015100AF5DCE /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233D52441015100AF5DCE /* SharedData.swift */; };
+		4D1233DA244101C100AF5DCE /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233D8244101C100AF5DCE /* ServiceError.swift */; };
+		4D1233DB244101C100AF5DCE /* AchievementsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233D9244101C100AF5DCE /* AchievementsModels.swift */; };
+		4D1233DF244101D400AF5DCE /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233DD244101D400AF5DCE /* AppHelper.swift */; };
+		4D1233E0244101D400AF5DCE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233DE244101D400AF5DCE /* Reachability.swift */; };
+		4D1233E3244101F200AF5DCE /* AchievementsBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +62,19 @@
 		4D12257E243E629800D2C620 /* stashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D122582243E629800D2C620 /* stashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashUITests.swift; sourceTree = "<group>"; };
 		4D122584243E629800D2C620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D1233B324400CDC00AF5DCE /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		4D1233B52440563B00AF5DCE /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
-		4D1233B7244058B700AF5DCE /* AchievementsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsAPI.swift; sourceTree = "<group>"; };
-		4D1233B92440590700AF5DCE /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		4D1233C42441005F00AF5DCE /* AchievementsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsAPI.swift; sourceTree = "<group>"; };
+		4D1233C52441005F00AF5DCE /* AchievementServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementServices.swift; sourceTree = "<group>"; };
+		4D1233C62441005F00AF5DCE /* ServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		4D1233CC2441008000AF5DCE /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		4D1233CD2441008000AF5DCE /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		4D1233D02441008A00AF5DCE /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		4D1233D12441008A00AF5DCE /* APILoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
+		4D1233D52441015100AF5DCE /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		4D1233D8244101C100AF5DCE /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		4D1233D9244101C100AF5DCE /* AchievementsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsModels.swift; sourceTree = "<group>"; };
+		4D1233DD244101D400AF5DCE /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		4D1233DE244101D400AF5DCE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsBusiness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +125,11 @@
 		4D12255F243E629700D2C620 /* stash */ = {
 			isa = PBXGroup;
 			children = (
-				4D1233B224400CBE00AF5DCE /* Network */,
+				4D1233E1244101DC00AF5DCE /* Business */,
+				4D1233DC244101CC00AF5DCE /* Common */,
+				4D1233D72441017B00AF5DCE /* Model */,
+				4D1233D42441014700AF5DCE /* Presistance */,
+				4D1233C32441004100AF5DCE /* Service */,
 				4D122560243E629700D2C620 /* AppDelegate.swift */,
 				4D122562243E629700D2C620 /* SceneDelegate.swift */,
 				4D122564243E629700D2C620 /* ViewController.swift */,
@@ -137,15 +159,68 @@
 			path = stashUITests;
 			sourceTree = "<group>";
 		};
-		4D1233B224400CBE00AF5DCE /* Network */ = {
+		4D1233C32441004100AF5DCE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4D1233B324400CDC00AF5DCE /* Environment.swift */,
-				4D1233B52440563B00AF5DCE /* APIHandler.swift */,
-				4D1233B7244058B700AF5DCE /* AchievementsAPI.swift */,
-				4D1233B92440590700AF5DCE /* BaseRequest.swift */,
+				4D1233CB2441007600AF5DCE /* API */,
+				4D1233CA2441006900AF5DCE /* Mocks */,
+				4D1233C62441005F00AF5DCE /* ServiceConstants.swift */,
+				4D1233C42441005F00AF5DCE /* AchievementsAPI.swift */,
+				4D1233C52441005F00AF5DCE /* AchievementServices.swift */,
 			);
-			path = Network;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4D1233CA2441006900AF5DCE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4D1233CD2441008000AF5DCE /* MockService.swift */,
+				4D1233CC2441008000AF5DCE /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4D1233CB2441007600AF5DCE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4D1233D02441008A00AF5DCE /* APIHandler.swift */,
+				4D1233D12441008A00AF5DCE /* APILoader.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		4D1233D42441014700AF5DCE /* Presistance */ = {
+			isa = PBXGroup;
+			children = (
+				4D1233D52441015100AF5DCE /* SharedData.swift */,
+			);
+			path = Presistance;
+			sourceTree = "<group>";
+		};
+		4D1233D72441017B00AF5DCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D1233D8244101C100AF5DCE /* ServiceError.swift */,
+				4D1233D9244101C100AF5DCE /* AchievementsModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D1233DC244101CC00AF5DCE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4D1233DD244101D400AF5DCE /* AppHelper.swift */,
+				4D1233DE244101D400AF5DCE /* Reachability.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4D1233E1244101DC00AF5DCE /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */,
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,13 +354,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1233D62441015100AF5DCE /* SharedData.swift in Sources */,
 				4D122565243E629700D2C620 /* ViewController.swift in Sources */,
-				4D1233B424400CDC00AF5DCE /* Environment.swift in Sources */,
-				4D1233B8244058B700AF5DCE /* AchievementsAPI.swift in Sources */,
-				4D1233BA2440590700AF5DCE /* BaseRequest.swift in Sources */,
-				4D1233B62440563B00AF5DCE /* APIHandler.swift in Sources */,
+				4D1233C72441005F00AF5DCE /* AchievementsAPI.swift in Sources */,
+				4D1233CF2441008000AF5DCE /* MockService.swift in Sources */,
 				4D122561243E629700D2C620 /* AppDelegate.swift in Sources */,
+				4D1233E3244101F200AF5DCE /* AchievementsBusiness.swift in Sources */,
 				4D122563243E629700D2C620 /* SceneDelegate.swift in Sources */,
+				4D1233C82441005F00AF5DCE /* AchievementServices.swift in Sources */,
+				4D1233DB244101C100AF5DCE /* AchievementsModels.swift in Sources */,
+				4D1233DA244101C100AF5DCE /* ServiceError.swift in Sources */,
+				4D1233DF244101D400AF5DCE /* AppHelper.swift in Sources */,
+				4D1233D32441008A00AF5DCE /* APILoader.swift in Sources */,
+				4D1233D22441008A00AF5DCE /* APIHandler.swift in Sources */,
+				4D1233C92441005F00AF5DCE /* ServiceConstants.swift in Sources */,
+				4D1233E0244101D400AF5DCE /* Reachability.swift in Sources */,
+				4D1233CE2441008000AF5DCE /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
