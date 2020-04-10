@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol Request {
+    var urlRequest:URLRequest {get}
+}
