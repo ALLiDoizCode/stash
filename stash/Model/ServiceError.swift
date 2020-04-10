@@ -9,7 +9,7 @@
 import Foundation
 
 struct ServiceError: Error, Codable {
-    let httpStatus: Int
+    let status: Int
     let message: String
     let description: String?
 }

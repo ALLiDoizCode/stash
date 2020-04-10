@@ -28,6 +28,8 @@
 		4D1233DF244101D400AF5DCE /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233DD244101D400AF5DCE /* AppHelper.swift */; };
 		4D1233E0244101D400AF5DCE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233DE244101D400AF5DCE /* Reachability.swift */; };
 		4D1233E3244101F200AF5DCE /* AchievementsBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */; };
+		4D1233FD2441282200AF5DCE /* AchievementsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */; };
+		4D1233FF244128B700AF5DCE /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D1233FE244128B700AF5DCE /* achievements.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		4D1233DD244101D400AF5DCE /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		4D1233DE244101D400AF5DCE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsBusiness.swift; sourceTree = "<group>"; };
+		4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceTests.swift; sourceTree = "<group>"; };
+		4D1233FE244128B700AF5DCE /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		4D12255F243E629700D2C620 /* stash */ = {
 			isa = PBXGroup;
 			children = (
+				4D1233FE244128B700AF5DCE /* achievements.json */,
 				4D1233E1244101DC00AF5DCE /* Business */,
 				4D1233DC244101CC00AF5DCE /* Common */,
 				4D1233D72441017B00AF5DCE /* Model */,
@@ -146,6 +151,7 @@
 			children = (
 				4D122577243E629800D2C620 /* stashTests.swift */,
 				4D122579243E629800D2C620 /* Info.plist */,
+				4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */,
 			);
 			path = stashTests;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D12256D243E629800D2C620 /* LaunchScreen.storyboard in Resources */,
+				4D1233FF244128B700AF5DCE /* achievements.json in Resources */,
 				4D12256A243E629800D2C620 /* Assets.xcassets in Resources */,
 				4D122568243E629700D2C620 /* Main.storyboard in Resources */,
 			);
@@ -378,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D122578243E629800D2C620 /* stashTests.swift in Sources */,
+				4D1233FD2441282200AF5DCE /* AchievementsServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
