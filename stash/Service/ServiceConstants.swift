@@ -15,7 +15,7 @@ enum Environment {
         case .production:
             return "https"
         default:
-            return "https"
+            return "http"
         }
     }
     
@@ -29,10 +29,13 @@ enum Environment {
     func subdomain() -> String {
         switch self {
         case .development:
+            print("development")
             return "stash-demo-api"
         case .staging:
+            print("staging")
             return "stash-demo-api"
         case .production:
+            print("production")
             return "stash-demo-api"
         }
     }
@@ -55,8 +58,10 @@ extension Environment {
 
 #if DEBUG
 let environment: Environment = Environment.development
-#else
+#elseif STAGING
 let environment: Environment = Environment.staging
+#else
+let environment: Environment = Environment.production
 #endif
 
 let baseUrl = environment.baseURL()

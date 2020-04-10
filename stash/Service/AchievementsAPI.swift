@@ -16,7 +16,6 @@ struct AchievementsAPI: APIHandler {
         urlRequest.httpMethod = "GET"
         // prepares auth request (sets header params, any additional configurations)
         let request = Request(urlRequest: urlRequest, requestBuilder: AuthRequest())
-        print(request.urlRequest)
         return request
     }
     

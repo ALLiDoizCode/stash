@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         achievementsBusiness.achievements(parameters: [:]) { (achievements, error) in
-            print(achievements?.achievements)
+            //print(achievements?.achievements)
         }
         // Do any additional setup after loading the view.
     }
