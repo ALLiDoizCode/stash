@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4D122561243E629700D2C620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D122560243E629700D2C620 /* AppDelegate.swift */; };
 		4D122563243E629700D2C620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D122562243E629700D2C620 /* SceneDelegate.swift */; };
-		4D122565243E629700D2C620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D122564243E629700D2C620 /* ViewController.swift */; };
 		4D122568243E629700D2C620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D122566243E629700D2C620 /* Main.storyboard */; };
 		4D12256A243E629800D2C620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D122569243E629800D2C620 /* Assets.xcassets */; };
 		4D12256D243E629800D2C620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D12256B243E629800D2C620 /* LaunchScreen.storyboard */; };
@@ -28,6 +27,8 @@
 		4D1233E3244101F200AF5DCE /* AchievementsBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */; };
 		4D1233FD2441282200AF5DCE /* AchievementsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */; };
 		4D1233FF244128B700AF5DCE /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D1233FE244128B700AF5DCE /* achievements.json */; };
+		4DF4B7902444F0C500ED13E4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4DF4B78F2444F0C500ED13E4 /* Kingfisher */; };
+		4DF4B7932444F11600ED13E4 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4B7922444F11600ED13E4 /* AchievementTableViewCell.swift */; };
 		4DFA256C2443F3ED00140CEE /* AchievementsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA25672443F3ED00140CEE /* AchievementsContract.swift */; };
 		4DFA256D2443F3ED00140CEE /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA25682443F3ED00140CEE /* AchievementsPresenter.swift */; };
 		4DFA256E2443F3ED00140CEE /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA25692443F3ED00140CEE /* AchievementsRouter.swift */; };
@@ -56,7 +57,6 @@
 		4D12255D243E629700D2C620 /* stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D122560243E629700D2C620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D122562243E629700D2C620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D122564243E629700D2C620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D122567243E629700D2C620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D122569243E629800D2C620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D12256C243E629800D2C620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 		4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsBusiness.swift; sourceTree = "<group>"; };
 		4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceTests.swift; sourceTree = "<group>"; };
 		4D1233FE244128B700AF5DCE /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		4DF4B7922444F11600ED13E4 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
 		4DFA25672443F3ED00140CEE /* AchievementsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsContract.swift; sourceTree = "<group>"; };
 		4DFA25682443F3ED00140CEE /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		4DFA25692443F3ED00140CEE /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF4B7902444F0C500ED13E4 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +146,6 @@
 				4D1233C32441004100AF5DCE /* Service */,
 				4D122560243E629700D2C620 /* AppDelegate.swift */,
 				4D122562243E629700D2C620 /* SceneDelegate.swift */,
-				4D122564243E629700D2C620 /* ViewController.swift */,
 				4D122566243E629700D2C620 /* Main.storyboard */,
 				4D122569243E629800D2C620 /* Assets.xcassets */,
 				4D12256B243E629800D2C620 /* LaunchScreen.storyboard */,
@@ -237,6 +238,7 @@
 		4D1AD24F24437C2700B533E9 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
+				4DF4B7912444F0FE00ED13E4 /* Views */,
 				4DFA25672443F3ED00140CEE /* AchievementsContract.swift */,
 				4DFA25682443F3ED00140CEE /* AchievementsPresenter.swift */,
 				4DFA25692443F3ED00140CEE /* AchievementsRouter.swift */,
@@ -244,6 +246,14 @@
 				4DFA256B2443F3ED00140CEE /* AchievementsInteractor.swift */,
 			);
 			path = Achievements;
+			sourceTree = "<group>";
+		};
+		4DF4B7912444F0FE00ED13E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DF4B7922444F11600ED13E4 /* AchievementTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +272,9 @@
 			dependencies = (
 			);
 			name = stash;
+			packageProductDependencies = (
+				4DF4B78F2444F0C500ED13E4 /* Kingfisher */,
+			);
 			productName = stash;
 			productReference = 4D12255D243E629700D2C620 /* stash.app */;
 			productType = "com.apple.product-type.application";
@@ -334,6 +347,9 @@
 				Base,
 			);
 			mainGroup = 4D122554243E629700D2C620;
+			packageReferences = (
+				4DF4B78E2444F0C500ED13E4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4D12255E243E629700D2C620 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -381,12 +397,12 @@
 				4DFA256F2443F3ED00140CEE /* AchievementsViewController.swift in Sources */,
 				4DFA256E2443F3ED00140CEE /* AchievementsRouter.swift in Sources */,
 				4D1233D62441015100AF5DCE /* SharedData.swift in Sources */,
-				4D122565243E629700D2C620 /* ViewController.swift in Sources */,
 				4DFA25702443F3ED00140CEE /* AchievementsInteractor.swift in Sources */,
 				4D1233C72441005F00AF5DCE /* AchievementsAPI.swift in Sources */,
 				4D122561243E629700D2C620 /* AppDelegate.swift in Sources */,
 				4D1233E3244101F200AF5DCE /* AchievementsBusiness.swift in Sources */,
 				4D122563243E629700D2C620 /* SceneDelegate.swift in Sources */,
+				4DF4B7932444F11600ED13E4 /* AchievementTableViewCell.swift in Sources */,
 				4DFA256C2443F3ED00140CEE /* AchievementsContract.swift in Sources */,
 				4D1233C82441005F00AF5DCE /* AchievementServices.swift in Sources */,
 				4D1233DB244101C100AF5DCE /* AchievementsModels.swift in Sources */,
@@ -1196,6 +1212,25 @@
 			defaultConfigurationName = "Debug (Development)";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4DF4B78E2444F0C500ED13E4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4DF4B78F2444F0C500ED13E4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DF4B78E2444F0C500ED13E4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D122555243E629700D2C620 /* Project object */;
 }
