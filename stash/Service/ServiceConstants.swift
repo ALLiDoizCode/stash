@@ -1,14 +1,7 @@
-//
-//  Environment.swift
-//  stash
-//
-//  Created by Jonathan Green on 4/9/20.
-//  Copyright © 2020 Jonathan Green. All rights reserved.
-//
-
 import Foundation
 
 enum Environment {
+    
     case development
     case staging
     case production
@@ -29,25 +22,29 @@ enum Environment {
     func domain() -> String {
         switch self {
         case .development, .staging, .production:
-            return "domain.com"
+            return "herokuapp.com"
         }
     }
     
     func subdomain() -> String {
         switch self {
         case .development:
-            return "dev.subdomain"
+            print("development")
+            return "stash-demo-api"
         case .staging:
-            return "test.subdomain"
+            print("staging")
+            return "stash-demo-api"
         case .production:
-            return "prod.subdomain"
-        
+            print("production")
+            return "stash-demo-api"
         }
     }
     
     func route() -> String {
-        return "/api/v1"
+        //return "/api/v1"
+        return ""
     }
+    
 }
 
 extension Environment {
@@ -56,15 +53,24 @@ extension Environment {
     }
 }
 
+
 // MARK:- APIs
+
 #if DEBUG
 let environment: Environment = Environment.development
-#else
+#elseif STAGING
 let environment: Environment = Environment.staging
+#else
+let environment: Environment = Environment.production
 #endif
 
 let baseUrl = environment.baseURL()
 
 struct Path {
-    var achievements:String {return "\(baseUrl)/achievements/fetch"}
+    
+    struct Achievements {
+        
+        var fetch: String { return "\(baseUrl)/achievements/fetch" }
+    
+    }
 }
