@@ -53,8 +53,12 @@ extension AchievementsViewController :UITableViewDataSource,UITableViewDelegate 
         return cell ?? AchievementTableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250
+        return 275
     }
 
 }
