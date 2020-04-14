@@ -18,6 +18,7 @@ class AchievementsViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Smart Investing"
         tableView = UITableView(frame: self.view.frame)
         tableView?.dataSource = self
         tableView?.delegate = self

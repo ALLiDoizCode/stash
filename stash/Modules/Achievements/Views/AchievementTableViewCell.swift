@@ -16,11 +16,15 @@ class AchievementTableViewCell: UITableViewCell {
     var levelView = UIView()
     var levelTitle = UILabel()
     var levelSubtitle = UILabel()
+    var currentPoints = UILabel()
+    var maxPoints = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview(bgImageView)
         self.addSubview(progressBar)
+        self.addSubview(currentPoints)
+        self.addSubview(maxPoints)
         self.addSubview(levelView)
         self.levelView.addSubview(levelTitle)
         self.levelView.addSubview(levelSubtitle)
@@ -59,11 +63,11 @@ class AchievementTableViewCell: UITableViewCell {
         bgImageView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
     }
     
-    func buildProgressBar(progress:Int) {
-        let progress = Float(progress)/100
+    func buildProgressBar(progress:Int,points:Int) {
+        let progressValue = Float(progress)/100
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         progressBar.clipsToBounds = true
-        progressBar.progress = progress
+        progressBar.progress = progressValue
         progressBar.backgroundColor = .white
         progressBar.progressTintColor = .green
         progressBar.layer.cornerRadius = 5
@@ -72,20 +76,35 @@ class AchievementTableViewCell: UITableViewCell {
         progressBar.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         progressBar.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.83).isActive = true
         progressBar.topAnchor.constraint(equalTo: self.bottomAnchor, constant: -80).isActive = true
+        
+        currentPoints.translatesAutoresizingMaskIntoConstraints = false
+        currentPoints.text = "\(progress)pts"
+        currentPoints.font = UIFont(name: "HelveticaNeue-Bold", size: 21)
+        currentPoints.textColor = .white
+        currentPoints.topAnchor.constraint(equalTo: progressBar.bottomAnchor, constant: 20).isActive = true
+        currentPoints.leftAnchor.constraint(equalTo: progressBar.leftAnchor, constant: 0).isActive = true
+        
+        maxPoints.translatesAutoresizingMaskIntoConstraints = false
+        maxPoints.text = "\(points)pts"
+        maxPoints.textAlignment = .right
+        maxPoints.font = UIFont(name: "HelveticaNeue-Bold", size: 21)
+        maxPoints.textColor = .white
+        maxPoints.topAnchor.constraint(equalTo: progressBar.bottomAnchor, constant: 20).isActive = true
+        maxPoints.rightAnchor.constraint(equalTo: progressBar.rightAnchor, constant: 0).isActive = true
     }
     
     func buildLevelView(level:String) {
         levelView.translatesAutoresizingMaskIntoConstraints = false
         levelView.backgroundColor = .white
+        levelView.alpha = 0.9
         levelView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         levelView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.3).isActive = true
         levelView.heightAnchor.constraint(equalTo: levelView.widthAnchor, multiplier: 1).isActive = true
         levelView.bottomAnchor.constraint(equalTo: progressBar.topAnchor, constant: -20).isActive = true
         levelView.layer.masksToBounds = true
         
-        let font = UIFont.boldSystemFont(ofSize: 21)
         levelTitle.text = "Level"
-        levelTitle.font = font
+        levelTitle.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
         levelTitle.textColor = .darkGray
         levelTitle.textAlignment = .center
         levelTitle.translatesAutoresizingMaskIntoConstraints = false
@@ -94,7 +113,7 @@ class AchievementTableViewCell: UITableViewCell {
         levelTitle.topAnchor.constraint(equalTo: levelView.topAnchor, constant: 30).isActive = true
         
         levelSubtitle.text = level
-        levelSubtitle.font = UIFont.boldSystemFont(ofSize: 60)
+        levelSubtitle.font = UIFont(name: "HelveticaNeue-Bold", size: 60)
         //levelSubtitle.textColor = .darkGray
         levelSubtitle.textAlignment = .center
         levelSubtitle.translatesAutoresizingMaskIntoConstraints = false
@@ -124,7 +143,7 @@ class AchievementTableViewCell: UITableViewCell {
         }
         
         buildImageView(urlString:achievement.bg_image_url)
-        buildProgressBar(progress:achievement.progress)
+        buildProgressBar(progress:achievement.progress, points: achievement.total)
         buildLevelView(level:achievement.level)
     }
 

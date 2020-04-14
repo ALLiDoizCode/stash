@@ -16,6 +16,9 @@ class AchievementsRouter: PresenterToRouterAchievementsProtocol {
         
         let viewController = AchievementsViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.barTintColor = UIColor(red:0.41, green:0.21, blue:0.81, alpha:1.00)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController.navigationBar.titleTextAttributes = textAttributes
         let presenter: ViewToPresenterAchievementsProtocol & InteractorToPresenterAchievementsProtocol = AchievementsPresenter()
         
         viewController.presenter = presenter
