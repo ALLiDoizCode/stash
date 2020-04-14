@@ -46,7 +46,7 @@ extension AchievementsViewController: PresenterToViewAchievementsProtocol{
         tableView?.reloadData()
     }
     
-    func onFetchAchievementsFailure(error: String) {
+    @objc func onFetchAchievementsFailure(error: String) {
         
     }
 }

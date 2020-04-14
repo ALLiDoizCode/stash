@@ -25,8 +25,11 @@
 		4D1233DF244101D400AF5DCE /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233DD244101D400AF5DCE /* AppHelper.swift */; };
 		4D1233E0244101D400AF5DCE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233DE244101D400AF5DCE /* Reachability.swift */; };
 		4D1233E3244101F200AF5DCE /* AchievementsBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */; };
-		4D1233FD2441282200AF5DCE /* AchievementsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */; };
 		4D1233FF244128B700AF5DCE /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D1233FE244128B700AF5DCE /* achievements.json */; };
+		4D769EE22445E94B004B1394 /* AchievementsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D769EDD2445E94A004B1394 /* AchievementsPresenterTest.swift */; };
+		4D769EE32445E94B004B1394 /* AchievementsRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D769EDE2445E94A004B1394 /* AchievementsRouterTest.swift */; };
+		4D769EE42445E94B004B1394 /* AchievementsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D769EDF2445E94B004B1394 /* AchievementsServiceTests.swift */; };
+		4D769EE62445E94B004B1394 /* AchievementsEntityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D769EE12445E94B004B1394 /* AchievementsEntityTest.swift */; };
 		4DF4B7902444F0C500ED13E4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4DF4B78F2444F0C500ED13E4 /* Kingfisher */; };
 		4DF4B7932444F11600ED13E4 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4B7922444F11600ED13E4 /* AchievementTableViewCell.swift */; };
 		4DF4B7962445A9E800ED13E4 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4B7952445A9E800ED13E4 /* UIColor_Extension.swift */; };
@@ -79,8 +82,11 @@
 		4D1233DD244101D400AF5DCE /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		4D1233DE244101D400AF5DCE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4D1233E2244101F200AF5DCE /* AchievementsBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsBusiness.swift; sourceTree = "<group>"; };
-		4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsServiceTests.swift; sourceTree = "<group>"; };
 		4D1233FE244128B700AF5DCE /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		4D769EDD2445E94A004B1394 /* AchievementsPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsPresenterTest.swift; sourceTree = "<group>"; };
+		4D769EDE2445E94A004B1394 /* AchievementsRouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsRouterTest.swift; sourceTree = "<group>"; };
+		4D769EDF2445E94B004B1394 /* AchievementsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsServiceTests.swift; sourceTree = "<group>"; };
+		4D769EE12445E94B004B1394 /* AchievementsEntityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsEntityTest.swift; sourceTree = "<group>"; };
 		4DF4B7922444F11600ED13E4 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
 		4DF4B7952445A9E800ED13E4 /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		4DFA25672443F3ED00140CEE /* AchievementsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsContract.swift; sourceTree = "<group>"; };
@@ -160,9 +166,9 @@
 		4D122576243E629800D2C620 /* stashTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D769EDC2445E936004B1394 /* achievementsTests */,
 				4D122577243E629800D2C620 /* stashTests.swift */,
 				4D122579243E629800D2C620 /* Info.plist */,
-				4D1233FC2441282200AF5DCE /* AchievementsServiceTests.swift */,
 			);
 			path = stashTests;
 			sourceTree = "<group>";
@@ -249,6 +255,17 @@
 				4DFA256B2443F3ED00140CEE /* AchievementsInteractor.swift */,
 			);
 			path = Achievements;
+			sourceTree = "<group>";
+		};
+		4D769EDC2445E936004B1394 /* achievementsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D769EE12445E94B004B1394 /* AchievementsEntityTest.swift */,
+				4D769EDD2445E94A004B1394 /* AchievementsPresenterTest.swift */,
+				4D769EDE2445E94A004B1394 /* AchievementsRouterTest.swift */,
+				4D769EDF2445E94B004B1394 /* AchievementsServiceTests.swift */,
+			);
+			path = achievementsTests;
 			sourceTree = "<group>";
 		};
 		4DF4B7912444F0FE00ED13E4 /* Views */ = {
@@ -432,8 +449,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D769EE62445E94B004B1394 /* AchievementsEntityTest.swift in Sources */,
+				4D769EE32445E94B004B1394 /* AchievementsRouterTest.swift in Sources */,
 				4D122578243E629800D2C620 /* stashTests.swift in Sources */,
-				4D1233FD2441282200AF5DCE /* AchievementsServiceTests.swift in Sources */,
+				4D769EE42445E94B004B1394 /* AchievementsServiceTests.swift in Sources */,
+				4D769EE22445E94B004B1394 /* AchievementsPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
