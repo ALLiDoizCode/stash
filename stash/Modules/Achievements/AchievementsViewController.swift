@@ -18,6 +18,11 @@ class AchievementsViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.tintColor = .white
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        let barButton = UIBarButtonItem(customView: infoButton)
+        self.navigationItem.rightBarButtonItem = barButton
         self.title = "Smart Investing"
         tableView = UITableView(frame: self.view.frame)
         tableView?.dataSource = self
@@ -25,6 +30,10 @@ class AchievementsViewController: UIViewController {
         tableView?.register(AchievementTableViewCell.self, forCellReuseIdentifier: "achievements")
         self.view.addSubview(tableView ?? UITableView())
         presenter?.refresh()
+    }
+    
+    @objc func infoButtonTapped() {
+        
     }
 
 }

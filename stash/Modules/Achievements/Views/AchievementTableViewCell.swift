@@ -65,13 +65,13 @@ class AchievementTableViewCell: UITableViewCell {
     
     func buildProgressBar(progress:Int,points:Int) {
         let progressValue = Float(progress)/100
+        let transform : CGAffineTransform = CGAffineTransform(scaleX: 1.0, y: 6.0)
         progressBar.translatesAutoresizingMaskIntoConstraints = false
         progressBar.clipsToBounds = true
         progressBar.progress = progressValue
         progressBar.backgroundColor = .white
         progressBar.progressTintColor = .green
         progressBar.layer.cornerRadius = 5
-        let transform : CGAffineTransform = CGAffineTransform(scaleX: 1.0, y: 6.0)
         progressBar.transform = transform;
         progressBar.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         progressBar.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.83).isActive = true
@@ -104,7 +104,7 @@ class AchievementTableViewCell: UITableViewCell {
         levelView.layer.masksToBounds = true
         
         levelTitle.text = "Level"
-        levelTitle.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        levelTitle.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
         levelTitle.textColor = .darkGray
         levelTitle.textAlignment = .center
         levelTitle.translatesAutoresizingMaskIntoConstraints = false
@@ -114,7 +114,6 @@ class AchievementTableViewCell: UITableViewCell {
         
         levelSubtitle.text = level
         levelSubtitle.font = UIFont(name: "HelveticaNeue-Bold", size: 60)
-        //levelSubtitle.textColor = .darkGray
         levelSubtitle.textAlignment = .center
         levelSubtitle.translatesAutoresizingMaskIntoConstraints = false
         levelSubtitle.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
@@ -123,7 +122,6 @@ class AchievementTableViewCell: UITableViewCell {
     }
     
     func setupCell(achievement:Achievement?) {
-        
         transparentView.backgroundColor = .white
         transparentView.alpha = 0;
         transparentView.layer.cornerRadius = 20
